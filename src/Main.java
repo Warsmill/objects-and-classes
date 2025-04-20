@@ -7,7 +7,15 @@ public class Main {
         Book bookTwo = new Book("Разработчик Android - приложений", authorBookTwo,2021 );
         bookOne.setBookPublicationDate(2024);
 
+        Author authorBookThee = new Author("Алекс","Эсперанса");
+        Book bookThree = new Book("Белый хакер", authorBookOne, 2024);
+
+        System.out.println(bookOne.equals(bookThree));
+        System.out.println( bookOne.equals(bookTwo));
+        System.out.println(bookTwo.equals(bookThree));
+
         bookOne.bookInfo();
         bookTwo.bookInfo();
+        bookThree.bookInfo();
     }
 }
